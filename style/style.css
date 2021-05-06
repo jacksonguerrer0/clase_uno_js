@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    text-align: center;
+}
+#formContainer {
+    background-color: #d3d3d3;
+    margin: 50px 450px;
+    padding: 50px;
+    border-radius: 20px;
+}
+#contentOne h1, #hour, #button {
+    margin-bottom: 20px;
+}
+#button {
+    background-color: rgb(214, 255, 255);
+    font-size: 20px;
+    padding: 5px;
+}
+#contentTwo {
+    border: 3px solid rgb(214, 255, 255);
+    margin: 20px 50px;
+    padding: 30px;
+}
+#contentTwo p, #week, #extra, #pay {
+    margin-bottom: 5px;
+}
+#contentTwo h3 {
+    margin-bottom: 20px;
+}
