@@ -3,7 +3,7 @@ var salario = 0;
 var extra = 0;
 
 function Calcular(){
-    cantidad = document.getElementById('cantidad').value;
+    cantidad = document.getElementById('idCantidad').value;
     console.log(cantidad);
 
     if(cantidad >= 1 && cantidad <=40){

@@ -19,15 +19,6 @@ function cantidad(){
    var x = document.querySelectorAll(".e");
    document.getElementById("paragraph").innerHTML = x.length;
 }
-/*ejercicio 1 del banco*/
-var cap_inv, gan;
-cap_inv = 150000
-gan = 0;
-//ejercicio 2 porcentaje de h y m
-//ejercicio 3 calculo de edad
-//ejercicio 4 desceunto de tienda
-gan = cap_inv * 0.02;
-document.write("La ganancia es de: " +gan);
 //condicional simple : toma de decision (alert)
 let numUno = 5;
 
@@ -59,3 +50,43 @@ if (num1 > num2) {
 }else{
     document.write("<br>Son iguales"); 
 }
+/*ejercicio 1 del banco*/
+var cap_inv, gan;
+cap_inv = 150000;
+gan = 0;
+
+gan = cap_inv * 0.02;
+document.write("<br>La ganancia es de: " + gan);
+
+//ejercicio 2 porcentaje de hombres y mujeres en un grupo - suponiendo que es un grupo de 40 con 15 hombres
+var men, women, group, porcentajeMen, porcentajeWomen;
+group = 40;
+men = 15;
+women = group - men;
+porcentajeMen = 0;
+porcentajeWomen = 0;
+
+porcentajeMen = men / (group / 100);
+porcentajeWomen = 100 - porcentajeMen;
+document.write("<br>El procentaje de hombres es: " + porcentajeMen);
+document.write("<br>El procentaje de mujeres es: " + porcentajeWomen);
+
+//ejercicio 3 calculo de edad - suponiendo que nacio en el 1999
+var birthYear, age, year;
+birthYear = 1999;
+year = 2021;
+age = 0;
+
+age = year - birthYear;
+document.write("<br>Tu edad es: " + age);
+
+//ejercicio 4 desceunto de tienda- suponiendo que la compra es de 250000
+var totalPurchase, totalDiscount, totalPay;
+totalPurchase = 250000;
+totalDiscount = 0;
+totalPay = 0;
+
+totalDiscount = (totalPurchase * 15 )/100;
+totalPay = totalPurchase - totalDiscount;
+document.write("<br>Debes pagar: " + totalPay);
+
