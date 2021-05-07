@@ -11,24 +11,20 @@
     <div id="formContainer">
         <div id="contentOne">
             <h1>Salario Semanal</h1>
-            <label for="hour">Ingrese cantidad de horas</label>
-            <input type="number" name="hour" id="hour">
-            <label for="button"></label>
-            <br>
-            <input type="button" id="button" name="button" value="Buscar">
+            <label for="cantidad">Ingrese cantidad de horas</label>
+            <input type="text" name="cantidad" id="cantidad">
+            <button onclick="Calcular()"><p>Calcular</p></button>
         </div>
         <div id="contentTwo">
             <h3>Valor a pagar</h3>
-            <p>Salario semanal:</p>
-            <label for="week"></label>
-            <input type="text" id="week" name="week">
-            <p>Salario extra:</p>
-            <label for="extra"></label>
+            <label for="salario">Salario semanal:</label>
+            <input type="text" id="salario" name="salario">
+            <label for="extra">Salario extra:</label>
             <input type="text" id="extra" name="extra">
-            <p>Salario a pagar:</p>
-            <label for="pay"></label>
+            <label for="pay">Salario a pagar:</label>
             <input type="text" id="pay" name="pay">
         </div>
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
