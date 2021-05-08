@@ -12,12 +12,16 @@ function Calcular(){
         document.getElementById("extra").value = extra;
         document.getElementById("pay").value = salario;
     }
-    else{
+    else if(cantidad > 40){
         extra = cantidad - 40;
         salario = (extra * 20000) + (40*16000);
         document.getElementById("salario").value = 40 * 16000;
         document.getElementById("extra").value = extra * 20000;
         document.getElementById("pay").value = salario;
     }
-
+    else {
+        document.getElementById("salario").value = 0;
+        document.getElementById("extra").value = 0;
+        document.getElementById("pay").value = 0;
+    }
 }
